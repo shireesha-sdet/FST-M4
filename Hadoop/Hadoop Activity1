@@ -1,0 +1,45 @@
+Activity 1
+
+---In this activity, we will be creating files in the local filesystem and the copying it into the HDFS.
+
+
+---Create a text file named txtFile.txt and add the following text to it:
+
+vim txtFile.txt
+
+---Create a CSV file named csvFile.csv and add the following data to it:
+vim csvFile.csv
+
+
+--check file is there or not
+ls
+
+---Next, create a directory named textData in the HDFS.
+ hdfs dfs -mkdir /user/root/textData
+
+---Copy the CSV file, csvFile.csv, into the textData folder in the HDFS.
+hdfs dfs -copyFromLocal ./csvFile.csv /user/root/textData
+
+---Create a blank File
+ hdfs dfs -touchz /user/root/textData/textfile.txt
+
+---Create a file in the textData folder named textFile.txt 
+hdfs dfs -copyFromLocal ./txtFile.txt /user/root/textData/txtFile.txt
+
+
+--- copy the contents of the txtFile.txt in the local system into the textFile.txt.
+hdfs dfs -getmerge -nl /user/root/textData/txtFile.txt /user/root/textData/textfile.txt /user/root/textData/textfile.txt
+
+
+---Check the copy is complete
+root@6b634194146b:/# hdfs dfs -cat /user/root/textData/txtFile.txt
+Night. That over years creepeth green fourth had after also seas make. Female living sea very hath. Dry good in is bring fifth under creeping all tree land.
+
+
+---Check the final copy complete
+root@6b634194146b:/# hdfs dfs -cat /user/root/textData/textFile.txt
+Night. That over years creepeth green fourth had after also seas make. Female living sea very hath. Dry good in is bring fifth under creeping all tree land.
+
+---Finally use the stat command to get the file statistics:
+root@6b634194146b:/# hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/root/textData/textFile.txt
+type:regular file permissions:644 root:supergroup size:157 name:textFile.txt
