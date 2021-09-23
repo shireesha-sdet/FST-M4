@@ -1,0 +1,224 @@
+LUKE    482
+HAN     439
+THREEPIO        296
+LEIA    223
+VADER   135
+BEN     102
+LANDO   96
+YODA    46
+RED LEADER      37
+EMPEROR 36
+BIGGS   35
+WEDGE   33
+TARKIN  29
+PIETT   29
+OWEN    26
+CREATURE        23
+TROOPER 20
+JABBA (in Huttese subtitled)    15
+GOLD LEADER     15
+OFFICER 14
+RIEEKAN 13
+COMMANDER       11
+JABBA   11
+ACKBAR  11
+BEN'S VOICE     11
+INTERCOM VOICE  9
+RED TEN 8
+GOLD FIVE       8
+DECK OFFICER    7
+FIRST TROOPER   7
+DEATH STAR INTERCOM VOICE       7
+VEERS   7
+AUNT BERU       7
+DODONNA 7
+GREEDO  7
+JERJERROD       6
+ZEV     6
+STORMTROOPER    5
+IMPERIAL OFFICER        5
+BIB     5
+HUMAN   5
+MOTTI   5
+NEEDA   5
+OZZEL   5
+TAGGE   5
+BOUSHH  5
+CONTROLLER      5
+NINEDENINE      5
+JANSON  4
+SECOND TROOPER  4
+BARTENDER       4
+BOBA FETT       4
+DACK    4
+MASSASSI INTERCOM VOICE 4
+VOICE   4
+CAPTAIN 3
+ANNOUNCER       3
+DERLIN  3
+FIXER   3
+GANTRY OFFICER  3
+HAN (cont)      3
+CHIEF   3
+CAMIE   3
+TRENCH OFFICER  3
+MAN'S VOICE     3
+REBEL PILOT     3
+SECOND OFFICER  3
+WILLARD 3
+GOLD TWO        3
+        2
+VOICE OVER DEATH STAR INTERCOM  2
+BOUSHH (in Ubese subtitled)     2
+CONTROLLER (over radio) 2
+COMMUNICATIONS OFFICER  2
+RED LEADER'S VOICE      2
+SENIOR CONTROLLER       2
+TRACKING OFFICER        2
+RED NINE'S VOICE        2
+WINGMAN'S VOICE 2
+SHUTTLE CAPTAIN 2
+RED TEN'S VOICE 2
+CONTROL OFFICER 2
+GENERAL MADINE  2
+TROOPER VOICE   2
+STRANGE VOICE   2
+REBEL OFFICER   2
+MEDICAL DROID   2
+FIRST OFFICER   2
+ASTRO-OFFICER   2
+OFFICER CASS    2
+LUKE'S VOICE    2
+HAN'S VOICE     2
+CHIEF PILOT     2
+ACKBAR (VO)     2
+TECHNICIAN      2
+RED ELEVEN      2
+MON MOTHMA      2
+LIEUTENANT      2
+BASE VOICE      2
+RED SEVEN       2
+SCOUT #1        2
+RED NINE        2
+WINGMAN 2
+PORKINS 2
+WOMAN   2
+PILOT   2
+GUARD   2
+DEAK    2
+BERU    2
+LEIA (to Han)   1
+LEIA (softly)   1
+HAN (to Luke)   1
+LUKE (concerned)        1
+HAN (gravely)   1
+LUKE (sarcastic)        1
+PILOT VOICE (HAN)(filtered)     1
+VADER (turning to face him)     1
+ACKBAR (cont)   1
+Y-WING PILOT    1
+VADER (bows)    1
+SECOND COMMANDER        1
+LUKE (turning away, derisive)   1
+VADER (indicating lightsaber)   1
+HAN and LUKE    1
+HAN (smiles)    1
+GREEN LEADER    1
+WOMAN CONTROLLER        1
+ASSISTANT OFFICER       1
+EMPEROR (to Luke)       1
+LUKE (cont)     1
+TAR WARS - EPISODE 5: THE EMPIRE STRIKES BACK   1
+HAN (sighs)     1
+HAN (grins)     1
+HAN (angry)     1
+GRAY LEADER     1
+MON MOTHMA (cont)       1
+BEN (continuing his narrative)  1
+PIETT (surprised)       1
+HAN (with self-confident grin)  1
+WEDGE (VO)      1
+VOICE (OS)      1
+JABBA (cont Huttese subtitled)  1
+SECOND CONTROLLER       1
+LUKE (indicating the one ahead) 1
+STORMTROOPER (OS)       1
+LUKE (pointing to the controls) 1
+NINEDENINE (to a Gamorrean guard)       1
+VADER (a whisper)       1
+VADER (skeptical)       1
+OOLA    1
+RED THREE       1
+LURE    1
+NAVIGATOR       1
+ANAKIN (very weak)      1
+EMPEROR (laughing)      1
+EMPEROR (to Vader)      1
+HAN (over comlink)      1
+JERJERROD (aghast)      1
+LANDO (to himself)      1
+EMPEROR (very cool)     1
+LANDO (desperately)     1
+SCOUT #l        1
+SCOUT #2        1
+YODA (gathering all his strength)       1
+DEATH STAR CONTROLLER(filtered VO)      1
+PILOT #2        1
+OPERATOR        1
+HAN (OS)        1
+LEIA (into comlink)     1
+LEIA (over comlink)     1
+BEN (OS)        1
+BEN (attempting to give solace with his words)  1
+LUKE (with sadness)     1
+THREEPIO (to Artoo)     1
+LANDO (into comlink)    1
+RED TWO 1
+LANDO (over comlink)    1
+BEN (grinning at Luke's indignation)    1
+PIETT (into comlink)    1
+THREEPIO (instantly)    1
+THREEPIO (to Wicket)    1
+VADER (after a beat)    1
+CONTROLLER (filtered)   1
+PILOTS  1
+EMPEROR (no surprise)   1
+HOBBIE  1
+HAN (turning to Luke)   1
+CONTROL ROOM COMMANDER  1
+HAN (loses his temper)  1
+ANAKIN  1
+YODA (shakes his head)  1
+HAN (to Leia)   1
+LUKE (shrugging it off) 1
+THREEPIO (disappearing) 1
+THREEPIO (cont) 1
+THREEPIO (still shaken) 1
+SECOND THREEPIO 1
+YODA (tickled, chuckles)        1
+RED LEADER (VO) 1
+LUKE (hesitant) 1
+LANDO (smiling) 1
+HEAD CONTROLLER 1
+HAN (sarcastic) 1
+EMPEROR (angry) 1
+HAN (looks at him warmly)       1
+WALKER PILOT #1 1
+BUNKER COMMANDER        1
+EMPEROR (laughs)        1
+LUKE (to Leia)  1
+LEIA (alarmed)  1
+FIRST CONTROLLER        1
+HAN/PILOT (VO)  1
+HAN (chuckles)  1
+HAN (blinking)  1
+SCOUT   1
+IMPERIAL SOLDIER        1
+EMPEROR (cont)  1
+TAR WARS - EPISODE 6: RETURN OF THE JEDI        1
+LUKE (moving to his ship)       1
+BIB (in Huttese subtitled)      1
+REBEL FIGHTER   1
+REBEL CAPTAIN   1
+HAN (whispering to himself)     1
+LUKE (groans)   1
