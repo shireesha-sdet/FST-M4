@@ -1,0 +1,1691 @@
+Task Name: Min Price Mapping_Min Price Mapping
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 00800000000000E
+09/05/2021 08:27:17 **** Importing Connection: Conn_01ASJH0B000000000003 ...
+09/05/2021 08:27:17 **** Importing Source Definition: Cars ...
+09/05/2021 08:27:17 **** Importing Target Definition: Max_Car_Prices ...
+09/05/2021 08:27:17 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  Cars...
+    Validating Target Definition  Max_Car_Prices...
+09/05/2021 08:27:17 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+09/05/2021 08:27:17 **** Importing Workflow: wf_mtt_01ASJH0Z000000000006 ...
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_01ASJH0Z000000000006].  Starting repository sequence id is [1375676383]
+DIRECTOR> VAR_27085 [2021-09-05 08:27:17.499] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/parameters/s_mtt_01ASJH0Z000000000006.param] is opened for [session [wf_mtt_01ASJH0Z000000000006.s_mtt_01ASJH0Z000000000006]].
+DIRECTOR> VAR_27062 [2021-09-05 08:27:17.499] Warning! Cannot find section for worklet [wf_mtt_01ASJH0Z000000000006] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/parameters/s_mtt_01ASJH0Z000000000006.param].
+DIRECTOR> VAR_27028 [2021-09-05 08:27:17.499] Use override value [s_mtt_01ASJH0Z000000000006_2_error.csv] for user-defined workflow/worklet variable:[$ErrorFileName].
+DIRECTOR> VAR_27028 [2021-09-05 08:27:17.499] Use override value [2021-09-05] for user-defined workflow/worklet variable:[$LastRunDate].
+DIRECTOR> VAR_27028 [2021-09-05 08:27:17.499] Use override value [2021-09-05 08:26:03] for user-defined workflow/worklet variable:[$LastRunTime].
+DIRECTOR> VAR_27028 [2021-09-05 08:27:17.499] Use override value [s_mtt_01ASJH0Z000000000006_9_5_2021_08_27_success.csv] for user-defined workflow/worklet variable:[$SuccessFileName].
+DIRECTOR> TM_6014 [2021-09-05 08:27:17.499] Initializing session [s_mtt_01ASJH0Z000000000006] at [Sun Sep 05 08:27:17 2021].
+DIRECTOR> TM_6683 [2021-09-05 08:27:17.499] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2021-09-05 08:27:17.499] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2021-09-05 08:27:17.499] Folder: []
+DIRECTOR> TM_6685 [2021-09-05 08:27:17.499] Workflow: [wf_mtt_01ASJH0Z000000000006] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6101 [2021-09-05 08:27:17.499] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2021-09-05 08:27:17.500] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2021-09-05 08:27:17.504] Session [s_mtt_01ASJH0Z000000000006] is run by 64-bit Integration Service  [], version [9.1.0 HotFix1], build [0627].
+MANAGER> PETL_24058 [2021-09-05 08:27:17.578] Running Partition Group [1].
+MANAGER> PETL_24000 [2021-09-05 08:27:17.578] Parallel Pipeline Engine initializing.
+MANAGER> PETL_24001 [2021-09-05 08:27:17.579] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2021-09-05 08:27:17.579] Initializing session run.
+MAPPING> CMN_1569 [2021-09-05 08:27:17.582] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2021-09-05 08:27:17.582] Server Code page: [ISO 8859-1 Western European]
+MAPPING> TM_6151 [2021-09-05 08:27:17.582] The session sort order is [Binary].
+MAPPING> TM_6185 [2021-09-05 08:27:17.582] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65083 [2021-09-05 08:27:17.582] Current Timezone:[UTC +0:0]
+MAPPING> CMN_65085 [2021-09-05 08:27:17.582] Current Process ID:[11411]
+MAPPING> TM_6155 [2021-09-05 08:27:17.582] Using HIGH precision processing.
+MAPPING> TM_6180 [2021-09-05 08:27:17.582] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2021-09-05 08:27:17.582] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2021-09-05 08:27:17.582] DTM error log disabled. 
+MAPPING> TE_7022 [2021-09-05 08:27:17.583] TShmWriter: Initialized
+MAPPING> DBG_21694 [2021-09-05 08:27:17.584] Aggregator Partition [0]: Index cache size = [1000000], Data cache size = [2000000]
+MAPPING> TE_7212 [2021-09-05 08:27:17.584] Increasing [Index Cache] size for transformation [Aggregator] from [1000000] to [1050384].
+MAPPING> TE_7212 [2021-09-05 08:27:17.584] Increasing [Data Cache] size for transformation [Aggregator] from [2000000] to [2097280].
+MAPPING> TE_7029 [2021-09-05 08:27:17.584] Aggregate Information: Creating New Index and Data Files
+MAPPING> TE_7034 [2021-09-05 08:27:17.585] Aggregate Information: Index file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/cache/PMAGG1375676412_4_0.idx]
+MAPPING> TE_7035 [2021-09-05 08:27:17.585] Aggregate Information: Data file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/cache/PMAGG1375676412_4_0.dat]
+MAPPING> TM_6007 [2021-09-05 08:27:17.585] DTM initialized successfully for session [s_mtt_01ASJH0Z000000000006]
+DIRECTOR> PETL_24033 [2021-09-05 08:27:17.610] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2021-09-05 08:27:17.611] Starting pre-session tasks. : (Sun Sep 05 08:27:17 2021)
+MANAGER> PETL_24027 [2021-09-05 08:27:17.612] Pre-session task completed successfully. : (Sun Sep 05 08:27:17 2021)
+DIRECTOR> PETL_24006 [2021-09-05 08:27:17.612] Starting data movement.
+MAPPING> TM_6660 [2021-09-05 08:27:17.613] Total Buffer Pool size is 4599040 bytes and Block size is 253280 bytes.
+READER_1_1_1> DBG_21438 [2021-09-05 08:27:17.614] Reader: Source is [odbc://dbtype=MySQL;host=remotemysql.com;port=3306;database=dmwbhqR9sR], user [dmwbhqR9sR]
+READER_1_1_1> BLKR_16051 [2021-09-05 08:27:17.616] Source database connection [Conn_01ASJH0B000000000003] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2021-09-05 08:27:17.616] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_1_1> CMN_1021 [2021-09-05 08:27:18.960] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=remotemysql.com;Database=dmwbhqR9sR;Port=3306;USER=dmwbhqR9sR;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [dmwbhqR9sR]
+DBMS Name:	MySQL
+DBMS Version:	8.0.13-4
+Driver Name:	libmyodbc8w.so
+Driver Version:	08.00.0012
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_1_1> BLKR_16003 [2021-09-05 08:27:18.961] Initialization completed successfully.
+WRITER_1_*_1> WRT_8147 [2021-09-05 08:27:18.962] Writer: Target is database [odbc://dbtype=MySQL;host=remotemysql.com;port=3306;database=dmwbhqR9sR], user [dmwbhqR9sR], bulk mode [OFF]
+WRITER_1_*_1> CMN_1021 [2021-09-05 08:27:18.962] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+WRITER_1_*_1> CMN_1021 [2021-09-05 08:27:20.318] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=remotemysql.com;Database=dmwbhqR9sR;Port=3306;USER=dmwbhqR9sR;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [dmwbhqR9sR]
+DBMS Name:	MySQL
+DBMS Version:	8.0.13-4
+Driver Name:	libmyodbc8w.so
+Driver Version:	08.00.0012
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+WRITER_1_*_1> WRT_8221 [2021-09-05 08:27:20.617] Target database connection [Conn_01ASJH0B000000000003] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2021-09-05 08:27:20.619] Target Table Max_Car_Prices :SQL INSERT statement:
+INSERT INTO dmwbhqR9sR.Max_Car_Prices(Product_ID,Product_Name,Product_Price)  VALUES ( ?, ?, ?) 
+WRITER_1_*_1> WRT_8124 [2021-09-05 08:27:20.619] Target Table Max_Car_Prices :SQL UPDATE override statement:
+UPDATE
+  Max_Car_Prices
+SET
+  Product_Name = ?,
+  Product_Price = ?
+WHERE
+  Product_ID = ?
+WRITER_1_*_1> WRT_8124 [2021-09-05 08:27:20.619] Target Table Max_Car_Prices :SQL DELETE statement:
+DELETE FROM dmwbhqR9sR.Max_Car_Prices WHERE Product_ID = ?
+WRITER_1_*_1> WRT_8270 [2021-09-05 08:27:20.619] Target connection group #1 consists of target(s) [Max_Car_Prices]
+WRITER_1_*_1> WRT_8003 [2021-09-05 08:27:20.619] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2021-09-05 08:27:20.619] Reader run started.
+WRITER_1_*_1> WRT_8005 [2021-09-05 08:27:20.619] Writer run started.
+WRITER_1_*_1> WRT_8158 [2021-09-05 08:27:20.619] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Sun Sep 05 08:27:20 2021
+
+Target tables:
+
+     Max_Car_Prices
+
+
+READER_1_1_1> RR_4010 [2021-09-05 08:27:20.619] SQ instance [Source] SQL Query [SELECT dmwbhqR9sR.Cars.Product_ID, dmwbhqR9sR.Cars.Product_Name, dmwbhqR9sR.Cars.Product_Country, dmwbhqR9sR.Cars.Product_Price FROM dmwbhqR9sR.Cars]
+READER_1_1_1> RR_4049 [2021-09-05 08:27:20.619] SQL Query issued to database : (Sun Sep 05 08:27:20 2021)
+READER_1_1_1> RR_4050 [2021-09-05 08:27:20.767] First row returned from database to reader : (Sun Sep 05 08:27:20 2021)
+READER_1_1_1> BLKR_16019 [2021-09-05 08:27:20.767] Read [100] rows, read [0] error rows for source table [Cars] instance name [Cars]
+READER_1_1_1> BLKR_16008 [2021-09-05 08:27:20.767] Reader run completed.
+TRANSF_1_1_1> TE_7032 [2021-09-05 08:27:20.774] The B-Tree being managed in files
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/cache/PMAGG1375676412_4_0.dat for Data and
+
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/cache/PMAGG1375676412_4_0.idx for Index has:
+	Index Size:	7
+	Row Size:	632
+	Order:		100
+	Minimum Order:	50
+	Height:		2
+	Entries:	101
+	IndexPageSize:	1896
+	IndexPages:	554
+	DataPageSize:	640
+	DataPages:	3277
+
+WRITER_1_*_1> WRT_8167 [2021-09-05 08:27:20.774] Start loading table [Max_Car_Prices] at: Sun Sep 05 08:27:20 2021
+TRANSF_1_1_1> DBG_21216 [2021-09-05 08:27:20.774] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:20.925] Timestamp Event: [Sun Sep 05 08:27:20 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:20.925] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '30' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:20.925] Timestamp Event: [Sun Sep 05 08:27:20 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:20.925] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:20.925] Timestamp Event: [Sun Sep 05 08:27:20 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:20.925] 
+Row # [1] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:20.925] : Rowdata: ( RowType=0(insert) Src Rowid=1 Targ Rowid=1
+  Product_ID (Product_ID:Int:): "30"
+  Product_Name (Product_Name:UniChar.300:): "Kia Motors"
+  Product_Price (Product_Price:Int:): "15499786"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.075] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.075] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '35' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.075] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.075] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.075] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.075] 
+Row # [2] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.075] : Rowdata: ( RowType=0(insert) Src Rowid=2 Targ Rowid=2
+  Product_ID (Product_ID:Int:): "35"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "7477515"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.225] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.225] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '49' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.225] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.225] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.225] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.225] 
+Row # [3] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.225] : Rowdata: ( RowType=0(insert) Src Rowid=3 Targ Rowid=3
+  Product_ID (Product_ID:Int:): "49"
+  Product_Name (Product_Name:UniChar.300:): "General Motors"
+  Product_Price (Product_Price:Int:): "19235083"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.375] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.376] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '86' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.376] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.376] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.376] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.376] 
+Row # [4] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.376] : Rowdata: ( RowType=0(insert) Src Rowid=4 Targ Rowid=4
+  Product_ID (Product_ID:Int:): "86"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "89454861"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.528] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.528] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '69' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.528] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.528] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.528] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.528] 
+Row # [5] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.528] : Rowdata: ( RowType=0(insert) Src Rowid=5 Targ Rowid=5
+  Product_ID (Product_ID:Int:): "69"
+  Product_Name (Product_Name:UniChar.300:): "Hyundai Motors"
+  Product_Price (Product_Price:Int:): "99760145"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.679] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.679] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '16' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.679] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.679] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.679] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.679] 
+Row # [6] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.679] : Rowdata: ( RowType=0(insert) Src Rowid=6 Targ Rowid=6
+  Product_ID (Product_ID:Int:): "16"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "77669650"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.830] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.830] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '76' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.830] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.830] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.830] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.830] 
+Row # [7] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.830] : Rowdata: ( RowType=0(insert) Src Rowid=7 Targ Rowid=7
+  Product_ID (Product_ID:Int:): "76"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "36223250"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.980] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:21.980] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '90' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.980] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:21.980] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:21.981] Timestamp Event: [Sun Sep 05 08:27:21 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:21.981] 
+Row # [8] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:21.981] : Rowdata: ( RowType=0(insert) Src Rowid=8 Targ Rowid=8
+  Product_ID (Product_ID:Int:): "90"
+  Product_Name (Product_Name:UniChar.300:): "Hyundai Motors"
+  Product_Price (Product_Price:Int:): "35731987"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.133] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:22.133] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '11' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.133] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:22.133] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.133] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:22.133] 
+Row # [9] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:22.133] : Rowdata: ( RowType=0(insert) Src Rowid=9 Targ Rowid=9
+  Product_ID (Product_ID:Int:): "11"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "13849620"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.283] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:22.283] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '65' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.283] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:22.283] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.283] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:22.283] 
+Row # [10] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:22.283] : Rowdata: ( RowType=0(insert) Src Rowid=10 Targ Rowid=10
+  Product_ID (Product_ID:Int:): "65"
+  Product_Name (Product_Name:UniChar.300:): "Mahindra and Mahindra"
+  Product_Price (Product_Price:Int:): "35749652"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.433] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:22.433] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '45' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.433] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:22.433] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.433] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:22.433] 
+Row # [11] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:22.433] : Rowdata: ( RowType=0(insert) Src Rowid=11 Targ Rowid=11
+  Product_ID (Product_ID:Int:): "45"
+  Product_Name (Product_Name:UniChar.300:): "Toyota"
+  Product_Price (Product_Price:Int:): "76117013"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.583] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:22.584] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '7' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.584] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:22.584] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.584] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:22.584] 
+Row # [12] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:22.584] : Rowdata: ( RowType=0(insert) Src Rowid=12 Targ Rowid=12
+  Product_ID (Product_ID:Int:): "7"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "44368150"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.734] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:22.734] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '63' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.734] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:22.734] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.734] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:22.734] 
+Row # [13] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:22.734] : Rowdata: ( RowType=0(insert) Src Rowid=13 Targ Rowid=13
+  Product_ID (Product_ID:Int:): "63"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "98001943"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.884] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:22.884] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '14' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.884] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:22.884] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:22.884] Timestamp Event: [Sun Sep 05 08:27:22 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:22.884] 
+Row # [14] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:22.884] : Rowdata: ( RowType=0(insert) Src Rowid=14 Targ Rowid=14
+  Product_ID (Product_ID:Int:): "14"
+  Product_Name (Product_Name:UniChar.300:): "Ferrari"
+  Product_Price (Product_Price:Int:): "65556013"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.034] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.034] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '55' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.034] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.034] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.034] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.034] 
+Row # [15] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.034] : Rowdata: ( RowType=0(insert) Src Rowid=15 Targ Rowid=15
+  Product_ID (Product_ID:Int:): "55"
+  Product_Name (Product_Name:UniChar.300:): "Toyota"
+  Product_Price (Product_Price:Int:): "64704557"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.184] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.184] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '6' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.184] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.184] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.184] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.184] 
+Row # [16] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.184] : Rowdata: ( RowType=0(insert) Src Rowid=16 Targ Rowid=16
+  Product_ID (Product_ID:Int:): "6"
+  Product_Name (Product_Name:UniChar.300:): "Ferrari"
+  Product_Price (Product_Price:Int:): "4542510"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.334] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.334] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '41' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.334] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.334] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.334] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.334] 
+Row # [17] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.335] : Rowdata: ( RowType=0(insert) Src Rowid=17 Targ Rowid=17
+  Product_ID (Product_ID:Int:): "41"
+  Product_Name (Product_Name:UniChar.300:): "BMW"
+  Product_Price (Product_Price:Int:): "78662961"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.485] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.485] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '52' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.485] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.485] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.485] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.485] 
+Row # [18] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.485] : Rowdata: ( RowType=0(insert) Src Rowid=18 Targ Rowid=18
+  Product_ID (Product_ID:Int:): "52"
+  Product_Name (Product_Name:UniChar.300:): "Ferrari"
+  Product_Price (Product_Price:Int:): "47497530"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.635] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.635] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '79' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.635] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.635] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.635] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.635] 
+Row # [19] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.635] : Rowdata: ( RowType=0(insert) Src Rowid=19 Targ Rowid=19
+  Product_ID (Product_ID:Int:): "79"
+  Product_Name (Product_Name:UniChar.300:): "Ferrari"
+  Product_Price (Product_Price:Int:): "23167803"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.785] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.785] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '51' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.785] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.785] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.785] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.785] 
+Row # [20] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.785] : Rowdata: ( RowType=0(insert) Src Rowid=20 Targ Rowid=20
+  Product_ID (Product_ID:Int:): "51"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "11662142"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.935] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:23.935] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '56' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.935] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:23.935] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:23.935] Timestamp Event: [Sun Sep 05 08:27:23 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:23.935] 
+Row # [21] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:23.936] : Rowdata: ( RowType=0(insert) Src Rowid=21 Targ Rowid=21
+  Product_ID (Product_ID:Int:): "56"
+  Product_Name (Product_Name:UniChar.300:): "Ferrari"
+  Product_Price (Product_Price:Int:): "97942847"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.085] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.086] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '72' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.086] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.086] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.086] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.086] 
+Row # [22] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.086] : Rowdata: ( RowType=0(insert) Src Rowid=22 Targ Rowid=22
+  Product_ID (Product_ID:Int:): "72"
+  Product_Name (Product_Name:UniChar.300:): "General Motors"
+  Product_Price (Product_Price:Int:): "42108991"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.236] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.236] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '2' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.236] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.236] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.236] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.236] 
+Row # [23] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.236] : Rowdata: ( RowType=0(insert) Src Rowid=23 Targ Rowid=23
+  Product_ID (Product_ID:Int:): "2"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "21924927"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.386] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.386] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '58' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.386] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.386] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.386] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.386] 
+Row # [24] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.386] : Rowdata: ( RowType=0(insert) Src Rowid=24 Targ Rowid=24
+  Product_ID (Product_ID:Int:): "58"
+  Product_Name (Product_Name:UniChar.300:): "Audi"
+  Product_Price (Product_Price:Int:): "44651074"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.536] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.536] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '18' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.536] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.536] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.536] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.536] 
+Row # [25] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.536] : Rowdata: ( RowType=0(insert) Src Rowid=25 Targ Rowid=25
+  Product_ID (Product_ID:Int:): "18"
+  Product_Name (Product_Name:UniChar.300:): "Jeep"
+  Product_Price (Product_Price:Int:): "59466819"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.686] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.687] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '61' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.687] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.687] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.687] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.687] 
+Row # [26] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.687] : Rowdata: ( RowType=0(insert) Src Rowid=26 Targ Rowid=26
+  Product_ID (Product_ID:Int:): "61"
+  Product_Name (Product_Name:UniChar.300:): "Ford"
+  Product_Price (Product_Price:Int:): "42197827"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.837] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.837] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '92' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.837] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.837] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.837] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.837] 
+Row # [27] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.837] : Rowdata: ( RowType=0(insert) Src Rowid=27 Targ Rowid=27
+  Product_ID (Product_ID:Int:): "92"
+  Product_Name (Product_Name:UniChar.300:): "BMW"
+  Product_Price (Product_Price:Int:): "2890565"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.987] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:24.987] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '98' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.987] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:24.987] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:24.987] Timestamp Event: [Sun Sep 05 08:27:24 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:24.987] 
+Row # [28] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:24.987] : Rowdata: ( RowType=0(insert) Src Rowid=28 Targ Rowid=28
+  Product_ID (Product_ID:Int:): "98"
+  Product_Name (Product_Name:UniChar.300:): "BMW"
+  Product_Price (Product_Price:Int:): "13166662"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.137] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:25.137] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '71' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.137] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:25.137] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.137] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:25.137] 
+Row # [29] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:25.137] : Rowdata: ( RowType=0(insert) Src Rowid=29 Targ Rowid=29
+  Product_ID (Product_ID:Int:): "71"
+  Product_Name (Product_Name:UniChar.300:): "General Motors"
+  Product_Price (Product_Price:Int:): "70006608"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.287] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:25.287] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '67' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.287] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:25.287] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.287] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:25.287] 
+Row # [30] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:25.287] : Rowdata: ( RowType=0(insert) Src Rowid=30 Targ Rowid=30
+  Product_ID (Product_ID:Int:): "67"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "55268176"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.438] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:25.438] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '26' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.438] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:25.438] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.438] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:25.438] 
+Row # [31] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:25.438] : Rowdata: ( RowType=0(insert) Src Rowid=31 Targ Rowid=31
+  Product_ID (Product_ID:Int:): "26"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "70894161"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.593] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:25.593] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '31' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.593] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:25.593] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.593] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:25.593] 
+Row # [32] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:25.593] : Rowdata: ( RowType=0(insert) Src Rowid=32 Targ Rowid=32
+  Product_ID (Product_ID:Int:): "31"
+  Product_Name (Product_Name:UniChar.300:): "BMW"
+  Product_Price (Product_Price:Int:): "6912082"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.746] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:25.746] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '20' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.746] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:25.746] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.746] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:25.746] 
+Row # [33] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:25.746] : Rowdata: ( RowType=0(insert) Src Rowid=33 Targ Rowid=33
+  Product_ID (Product_ID:Int:): "20"
+  Product_Name (Product_Name:UniChar.300:): "Audi"
+  Product_Price (Product_Price:Int:): "49391186"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.897] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:25.897] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '84' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.897] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:25.897] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:25.897] Timestamp Event: [Sun Sep 05 08:27:25 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:25.897] 
+Row # [34] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:25.897] : Rowdata: ( RowType=0(insert) Src Rowid=34 Targ Rowid=34
+  Product_ID (Product_ID:Int:): "84"
+  Product_Name (Product_Name:UniChar.300:): "Ferrari"
+  Product_Price (Product_Price:Int:): "19700563"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.047] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.047] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '27' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.047] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.047] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.047] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.047] 
+Row # [35] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.047] : Rowdata: ( RowType=0(insert) Src Rowid=35 Targ Rowid=35
+  Product_ID (Product_ID:Int:): "27"
+  Product_Name (Product_Name:UniChar.300:): "Kia Motors"
+  Product_Price (Product_Price:Int:): "3112534"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.208] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.208] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '73' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.208] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.208] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.208] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.208] 
+Row # [36] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.208] : Rowdata: ( RowType=0(insert) Src Rowid=36 Targ Rowid=36
+  Product_ID (Product_ID:Int:): "73"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "42542427"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.358] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.358] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '75' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.358] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.358] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.358] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.358] 
+Row # [37] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.358] : Rowdata: ( RowType=0(insert) Src Rowid=37 Targ Rowid=37
+  Product_ID (Product_ID:Int:): "75"
+  Product_Name (Product_Name:UniChar.300:): "Toyota"
+  Product_Price (Product_Price:Int:): "72726620"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.514] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.514] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '40' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.514] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.514] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.514] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.514] 
+Row # [38] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.514] : Rowdata: ( RowType=0(insert) Src Rowid=38 Targ Rowid=38
+  Product_ID (Product_ID:Int:): "40"
+  Product_Name (Product_Name:UniChar.300:): "Chevrolet"
+  Product_Price (Product_Price:Int:): "78502755"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.664] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.664] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '4' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.664] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.664] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.664] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.664] 
+Row # [39] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.664] : Rowdata: ( RowType=0(insert) Src Rowid=39 Targ Rowid=39
+  Product_ID (Product_ID:Int:): "4"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "78871398"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.814] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.814] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '77' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.814] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.814] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.814] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.814] 
+Row # [40] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.814] : Rowdata: ( RowType=0(insert) Src Rowid=40 Targ Rowid=40
+  Product_ID (Product_ID:Int:): "77"
+  Product_Name (Product_Name:UniChar.300:): "Honda"
+  Product_Price (Product_Price:Int:): "57553771"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.964] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:26.964] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '97' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.964] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:26.964] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:26.964] Timestamp Event: [Sun Sep 05 08:27:26 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:26.964] 
+Row # [41] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:26.964] : Rowdata: ( RowType=0(insert) Src Rowid=41 Targ Rowid=41
+  Product_ID (Product_ID:Int:): "97"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "79371884"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.114] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:27.114] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '80' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.114] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:27.114] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.114] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:27.114] 
+Row # [42] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:27.114] : Rowdata: ( RowType=0(insert) Src Rowid=42 Targ Rowid=42
+  Product_ID (Product_ID:Int:): "80"
+  Product_Name (Product_Name:UniChar.300:): "Hyundai Motors"
+  Product_Price (Product_Price:Int:): "353903"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.264] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:27.264] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '83' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.264] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:27.264] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.264] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:27.264] 
+Row # [43] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:27.265] : Rowdata: ( RowType=0(insert) Src Rowid=43 Targ Rowid=43
+  Product_ID (Product_ID:Int:): "83"
+  Product_Name (Product_Name:UniChar.300:): "Audi"
+  Product_Price (Product_Price:Int:): "50289522"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.415] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:27.415] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '74' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.415] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:27.415] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.415] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:27.415] 
+Row # [44] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:27.415] : Rowdata: ( RowType=0(insert) Src Rowid=44 Targ Rowid=44
+  Product_ID (Product_ID:Int:): "74"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "14950771"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.565] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:27.565] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '54' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.565] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:27.565] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.565] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:27.565] 
+Row # [45] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:27.565] : Rowdata: ( RowType=0(insert) Src Rowid=45 Targ Rowid=45
+  Product_ID (Product_ID:Int:): "54"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "79874931"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.715] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:27.715] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '89' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.715] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:27.715] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.715] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:27.715] 
+Row # [46] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:27.715] : Rowdata: ( RowType=0(insert) Src Rowid=46 Targ Rowid=46
+  Product_ID (Product_ID:Int:): "89"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "36226420"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.865] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:27.865] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '10' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.865] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:27.865] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:27.865] Timestamp Event: [Sun Sep 05 08:27:27 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:27.865] 
+Row # [47] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:27.865] : Rowdata: ( RowType=0(insert) Src Rowid=47 Targ Rowid=47
+  Product_ID (Product_ID:Int:): "10"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "72701557"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.015] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.015] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '100' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.015] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.015] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.015] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.015] 
+Row # [48] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.015] : Rowdata: ( RowType=0(insert) Src Rowid=48 Targ Rowid=48
+  Product_ID (Product_ID:Int:): "100"
+  Product_Name (Product_Name:UniChar.300:): "Fiat"
+  Product_Price (Product_Price:Int:): "34315899"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.166] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.166] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '32' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.166] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.166] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.166] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.166] 
+Row # [49] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.166] : Rowdata: ( RowType=0(insert) Src Rowid=49 Targ Rowid=49
+  Product_ID (Product_ID:Int:): "32"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "84857468"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.316] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.316] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '78' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.316] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.316] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.316] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.316] 
+Row # [50] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.316] : Rowdata: ( RowType=0(insert) Src Rowid=50 Targ Rowid=50
+  Product_ID (Product_ID:Int:): "78"
+  Product_Name (Product_Name:UniChar.300:): "Kia Motors"
+  Product_Price (Product_Price:Int:): "1373566"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.466] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.466] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '60' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.466] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.466] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.466] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.466] 
+Row # [51] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.466] : Rowdata: ( RowType=0(insert) Src Rowid=51 Targ Rowid=51
+  Product_ID (Product_ID:Int:): "60"
+  Product_Name (Product_Name:UniChar.300:): "General Motors"
+  Product_Price (Product_Price:Int:): "67255681"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.616] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.616] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '96' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.616] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.616] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.616] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.616] 
+Row # [52] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.616] : Rowdata: ( RowType=0(insert) Src Rowid=52 Targ Rowid=52
+  Product_ID (Product_ID:Int:): "96"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "11938436"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.766] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.766] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '95' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.766] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.766] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.766] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.766] 
+Row # [53] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.766] : Rowdata: ( RowType=0(insert) Src Rowid=53 Targ Rowid=53
+  Product_ID (Product_ID:Int:): "95"
+  Product_Name (Product_Name:UniChar.300:): "Ford"
+  Product_Price (Product_Price:Int:): "97647239"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.916] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:28.916] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '23' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.916] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:28.916] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:28.916] Timestamp Event: [Sun Sep 05 08:27:28 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:28.916] 
+Row # [54] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:28.917] : Rowdata: ( RowType=0(insert) Src Rowid=54 Targ Rowid=54
+  Product_ID (Product_ID:Int:): "23"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "78799507"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.067] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.067] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '46' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.067] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.067] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.067] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.067] 
+Row # [55] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.067] : Rowdata: ( RowType=0(insert) Src Rowid=55 Targ Rowid=55
+  Product_ID (Product_ID:Int:): "46"
+  Product_Name (Product_Name:UniChar.300:): "Mercedes-Benz"
+  Product_Price (Product_Price:Int:): "18799774"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.217] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.217] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '12' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.217] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.217] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.217] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.217] 
+Row # [56] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.217] : Rowdata: ( RowType=0(insert) Src Rowid=56 Targ Rowid=56
+  Product_ID (Product_ID:Int:): "12"
+  Product_Name (Product_Name:UniChar.300:): "Nissan"
+  Product_Price (Product_Price:Int:): "5737887"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.367] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.367] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '33' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.367] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.367] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.367] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.367] 
+Row # [57] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.367] : Rowdata: ( RowType=0(insert) Src Rowid=57 Targ Rowid=57
+  Product_ID (Product_ID:Int:): "33"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "40568994"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.517] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.517] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '29' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.517] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.517] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.517] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.517] 
+Row # [58] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.517] : Rowdata: ( RowType=0(insert) Src Rowid=58 Targ Rowid=58
+  Product_ID (Product_ID:Int:): "29"
+  Product_Name (Product_Name:UniChar.300:): "Jeep"
+  Product_Price (Product_Price:Int:): "22382503"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.667] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.667] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '39' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.667] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.667] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.667] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.667] 
+Row # [59] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.667] : Rowdata: ( RowType=0(insert) Src Rowid=59 Targ Rowid=59
+  Product_ID (Product_ID:Int:): "39"
+  Product_Name (Product_Name:UniChar.300:): "Mercedes-Benz"
+  Product_Price (Product_Price:Int:): "71667113"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.817] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.817] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '91' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.817] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.817] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.817] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.817] 
+Row # [60] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.818] : Rowdata: ( RowType=0(insert) Src Rowid=60 Targ Rowid=60
+  Product_ID (Product_ID:Int:): "91"
+  Product_Name (Product_Name:UniChar.300:): "Toyota"
+  Product_Price (Product_Price:Int:): "49496234"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.968] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:29.968] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '17' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.968] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:29.968] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:29.968] Timestamp Event: [Sun Sep 05 08:27:29 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:29.968] 
+Row # [61] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:29.968] : Rowdata: ( RowType=0(insert) Src Rowid=61 Targ Rowid=61
+  Product_ID (Product_ID:Int:): "17"
+  Product_Name (Product_Name:UniChar.300:): "Hyundai Motors"
+  Product_Price (Product_Price:Int:): "76621231"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.118] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:30.118] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '87' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.118] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:30.118] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.118] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:30.118] 
+Row # [62] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:30.118] : Rowdata: ( RowType=0(insert) Src Rowid=62 Targ Rowid=62
+  Product_ID (Product_ID:Int:): "87"
+  Product_Name (Product_Name:UniChar.300:): "Fiat"
+  Product_Price (Product_Price:Int:): "51880367"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.268] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:30.268] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '62' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.268] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:30.268] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.268] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:30.268] 
+Row # [63] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:30.268] : Rowdata: ( RowType=0(insert) Src Rowid=63 Targ Rowid=63
+  Product_ID (Product_ID:Int:): "62"
+  Product_Name (Product_Name:UniChar.300:): "Jeep"
+  Product_Price (Product_Price:Int:): "25873587"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.418] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:30.418] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '53' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.418] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:30.419] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.419] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:30.419] 
+Row # [64] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:30.419] : Rowdata: ( RowType=0(insert) Src Rowid=64 Targ Rowid=64
+  Product_ID (Product_ID:Int:): "53"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "15751349"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.569] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:30.569] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '36' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.569] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:30.569] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.569] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:30.569] 
+Row # [65] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:30.569] : Rowdata: ( RowType=0(insert) Src Rowid=65 Targ Rowid=65
+  Product_ID (Product_ID:Int:): "36"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "11958709"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.719] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:30.719] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '15' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.719] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:30.719] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.719] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:30.719] 
+Row # [66] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:30.719] : Rowdata: ( RowType=0(insert) Src Rowid=66 Targ Rowid=66
+  Product_ID (Product_ID:Int:): "15"
+  Product_Name (Product_Name:UniChar.300:): "Mercedes-Benz"
+  Product_Price (Product_Price:Int:): "20290231"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.869] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:30.869] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '64' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.869] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:30.869] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:30.869] Timestamp Event: [Sun Sep 05 08:27:30 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:30.869] 
+Row # [67] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:30.869] : Rowdata: ( RowType=0(insert) Src Rowid=67 Targ Rowid=67
+  Product_ID (Product_ID:Int:): "64"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "80047801"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.019] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.019] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '22' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.019] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.019] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.019] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.019] 
+Row # [68] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.019] : Rowdata: ( RowType=0(insert) Src Rowid=68 Targ Rowid=68
+  Product_ID (Product_ID:Int:): "22"
+  Product_Name (Product_Name:UniChar.300:): "Skoda"
+  Product_Price (Product_Price:Int:): "88088506"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.169] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.169] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '93' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.169] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.170] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.170] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.170] 
+Row # [69] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.170] : Rowdata: ( RowType=0(insert) Src Rowid=69 Targ Rowid=69
+  Product_ID (Product_ID:Int:): "93"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "82340543"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.320] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.320] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '70' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.320] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.320] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.320] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.320] 
+Row # [70] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.320] : Rowdata: ( RowType=0(insert) Src Rowid=70 Targ Rowid=70
+  Product_ID (Product_ID:Int:): "70"
+  Product_Name (Product_Name:UniChar.300:): "Mahindra and Mahindra"
+  Product_Price (Product_Price:Int:): "65567941"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.470] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.470] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '25' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.470] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.470] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.470] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.470] 
+Row # [71] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.470] : Rowdata: ( RowType=0(insert) Src Rowid=71 Targ Rowid=71
+  Product_ID (Product_ID:Int:): "25"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "45238983"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.620] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.620] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '94' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.620] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.620] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.620] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.620] 
+Row # [72] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.620] : Rowdata: ( RowType=0(insert) Src Rowid=72 Targ Rowid=72
+  Product_ID (Product_ID:Int:): "94"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "45804233"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.770] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.770] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '50' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.770] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.770] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.770] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.770] 
+Row # [73] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.770] : Rowdata: ( RowType=0(insert) Src Rowid=73 Targ Rowid=73
+  Product_ID (Product_ID:Int:): "50"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "16557517"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.922] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:31.922] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '48' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.922] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:31.922] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:31.922] Timestamp Event: [Sun Sep 05 08:27:31 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:31.922] 
+Row # [74] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:31.922] : Rowdata: ( RowType=0(insert) Src Rowid=74 Targ Rowid=74
+  Product_ID (Product_ID:Int:): "48"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "96961998"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.072] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.072] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '8' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.072] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.072] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.072] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.072] 
+Row # [75] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.072] : Rowdata: ( RowType=0(insert) Src Rowid=75 Targ Rowid=75
+  Product_ID (Product_ID:Int:): "8"
+  Product_Name (Product_Name:UniChar.300:): "BMW"
+  Product_Price (Product_Price:Int:): "76382416"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.222] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.222] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '66' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.222] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.222] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.222] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.222] 
+Row # [76] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.222] : Rowdata: ( RowType=0(insert) Src Rowid=76 Targ Rowid=76
+  Product_ID (Product_ID:Int:): "66"
+  Product_Name (Product_Name:UniChar.300:): "Tata Motors"
+  Product_Price (Product_Price:Int:): "89940435"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.372] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.372] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '34' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.373] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.373] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.373] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.373] 
+Row # [77] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.373] : Rowdata: ( RowType=0(insert) Src Rowid=77 Targ Rowid=77
+  Product_ID (Product_ID:Int:): "34"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "34601942"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.523] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.523] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '59' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.523] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.523] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.523] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.523] 
+Row # [78] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.523] : Rowdata: ( RowType=0(insert) Src Rowid=78 Targ Rowid=78
+  Product_ID (Product_ID:Int:): "59"
+  Product_Name (Product_Name:UniChar.300:): "Audi"
+  Product_Price (Product_Price:Int:): "46661078"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.673] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.673] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '99' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.673] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.673] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.673] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.673] 
+Row # [79] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.673] : Rowdata: ( RowType=0(insert) Src Rowid=79 Targ Rowid=79
+  Product_ID (Product_ID:Int:): "99"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "56603095"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.823] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.823] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '82' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.823] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.823] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.823] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.823] 
+Row # [80] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.823] : Rowdata: ( RowType=0(insert) Src Rowid=80 Targ Rowid=80
+  Product_ID (Product_ID:Int:): "82"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "21713368"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.973] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:32.973] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '44' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.973] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:32.973] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:32.973] Timestamp Event: [Sun Sep 05 08:27:32 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:32.973] 
+Row # [81] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:32.973] : Rowdata: ( RowType=0(insert) Src Rowid=81 Targ Rowid=81
+  Product_ID (Product_ID:Int:): "44"
+  Product_Name (Product_Name:UniChar.300:): "Fiat"
+  Product_Price (Product_Price:Int:): "78100699"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.124] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:33.124] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '28' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.124] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:33.124] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.124] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:33.124] 
+Row # [82] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:33.124] : Rowdata: ( RowType=0(insert) Src Rowid=82 Targ Rowid=82
+  Product_ID (Product_ID:Int:): "28"
+  Product_Name (Product_Name:UniChar.300:): "Jeep"
+  Product_Price (Product_Price:Int:): "12539107"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.274] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:33.274] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '85' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.274] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:33.274] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.274] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:33.274] 
+Row # [83] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:33.274] : Rowdata: ( RowType=0(insert) Src Rowid=83 Targ Rowid=83
+  Product_ID (Product_ID:Int:): "85"
+  Product_Name (Product_Name:UniChar.300:): "Jeep"
+  Product_Price (Product_Price:Int:): "3899363"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.424] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:33.424] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '38' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.424] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:33.424] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.424] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:33.424] 
+Row # [84] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:33.424] : Rowdata: ( RowType=0(insert) Src Rowid=84 Targ Rowid=84
+  Product_ID (Product_ID:Int:): "38"
+  Product_Name (Product_Name:UniChar.300:): "Mahindra and Mahindra"
+  Product_Price (Product_Price:Int:): "15095013"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.574] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:33.574] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '13' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.574] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:33.574] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.574] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:33.574] 
+Row # [85] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:33.574] : Rowdata: ( RowType=0(insert) Src Rowid=85 Targ Rowid=85
+  Product_ID (Product_ID:Int:): "13"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "76893928"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.724] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:33.725] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '68' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.725] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:33.725] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.725] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:33.725] 
+Row # [86] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:33.725] : Rowdata: ( RowType=0(insert) Src Rowid=86 Targ Rowid=86
+  Product_ID (Product_ID:Int:): "68"
+  Product_Name (Product_Name:UniChar.300:): "Kia Motors"
+  Product_Price (Product_Price:Int:): "83359979"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.875] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:33.875] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '19' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.875] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:33.875] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:33.875] Timestamp Event: [Sun Sep 05 08:27:33 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:33.875] 
+Row # [87] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:33.875] : Rowdata: ( RowType=0(insert) Src Rowid=87 Targ Rowid=87
+  Product_ID (Product_ID:Int:): "19"
+  Product_Name (Product_Name:UniChar.300:): "Volkswagen"
+  Product_Price (Product_Price:Int:): "49509868"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.025] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.025] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '81' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.025] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.025] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.025] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.025] 
+Row # [88] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.025] : Rowdata: ( RowType=0(insert) Src Rowid=88 Targ Rowid=88
+  Product_ID (Product_ID:Int:): "81"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "17923566"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.175] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.175] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '43' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.175] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.175] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.175] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.175] 
+Row # [89] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.175] : Rowdata: ( RowType=0(insert) Src Rowid=89 Targ Rowid=89
+  Product_ID (Product_ID:Int:): "43"
+  Product_Name (Product_Name:UniChar.300:): "Jeep"
+  Product_Price (Product_Price:Int:): "7775984"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.325] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.325] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '21' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.325] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.325] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.325] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.325] 
+Row # [90] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.325] : Rowdata: ( RowType=0(insert) Src Rowid=90 Targ Rowid=90
+  Product_ID (Product_ID:Int:): "21"
+  Product_Name (Product_Name:UniChar.300:): "Suzuki"
+  Product_Price (Product_Price:Int:): "63338993"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.475] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.475] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '37' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.475] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.475] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.475] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.475] 
+Row # [91] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.475] : Rowdata: ( RowType=0(insert) Src Rowid=91 Targ Rowid=91
+  Product_ID (Product_ID:Int:): "37"
+  Product_Name (Product_Name:UniChar.300:): "Ford"
+  Product_Price (Product_Price:Int:): "6556406"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.626] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.626] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '57' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.626] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.626] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.626] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.626] 
+Row # [92] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.626] : Rowdata: ( RowType=0(insert) Src Rowid=92 Targ Rowid=92
+  Product_ID (Product_ID:Int:): "57"
+  Product_Name (Product_Name:UniChar.300:): "Mercedes-Benz"
+  Product_Price (Product_Price:Int:): "69065462"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.776] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.776] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '88' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.776] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.776] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.776] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.776] 
+Row # [93] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.776] : Rowdata: ( RowType=0(insert) Src Rowid=93 Targ Rowid=93
+  Product_ID (Product_ID:Int:): "88"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "81317111"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.926] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:34.926] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '9' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.926] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:34.926] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:34.926] Timestamp Event: [Sun Sep 05 08:27:34 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:34.926] 
+Row # [94] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:34.926] : Rowdata: ( RowType=0(insert) Src Rowid=94 Targ Rowid=94
+  Product_ID (Product_ID:Int:): "9"
+  Product_Name (Product_Name:UniChar.300:): "BMW"
+  Product_Price (Product_Price:Int:): "8446456"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.076] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:35.076] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '42' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.076] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:35.076] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.076] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:35.076] 
+Row # [95] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:35.076] : Rowdata: ( RowType=0(insert) Src Rowid=95 Targ Rowid=95
+  Product_ID (Product_ID:Int:): "42"
+  Product_Name (Product_Name:UniChar.300:): "Renault"
+  Product_Price (Product_Price:Int:): "54826746"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.226] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:35.226] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '24' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.226] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:35.226] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.226] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:35.226] 
+Row # [96] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:35.226] : Rowdata: ( RowType=0(insert) Src Rowid=96 Targ Rowid=96
+  Product_ID (Product_ID:Int:): "24"
+  Product_Name (Product_Name:UniChar.300:): "Audi"
+  Product_Price (Product_Price:Int:): "86913020"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.377] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:35.377] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '5' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.377] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:35.377] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.377] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:35.377] 
+Row # [97] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:35.377] : Rowdata: ( RowType=0(insert) Src Rowid=97 Targ Rowid=97
+  Product_ID (Product_ID:Int:): "5"
+  Product_Name (Product_Name:UniChar.300:): "Ford"
+  Product_Price (Product_Price:Int:): "27937020"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.527] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:35.527] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '47' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.527] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:35.527] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.527] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:35.527] 
+Row # [98] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:35.527] : Rowdata: ( RowType=0(insert) Src Rowid=98 Targ Rowid=98
+  Product_ID (Product_ID:Int:): "47"
+  Product_Name (Product_Name:UniChar.300:): "Maruti Suzuki"
+  Product_Price (Product_Price:Int:): "3097597"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.677] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:35.677] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '3' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.677] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:35.677] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.677] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:35.677] 
+Row # [99] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:35.677] : Rowdata: ( RowType=0(insert) Src Rowid=99 Targ Rowid=99
+  Product_ID (Product_ID:Int:): "3"
+  Product_Name (Product_Name:UniChar.300:): "Hyundai Motors"
+  Product_Price (Product_Price:Int:): "33127422"
+)
+
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.827] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8229 [2021-09-05 08:27:35.827] Database errors occurred: 
+FnName: Execute -- [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.13-4]Duplicate entry '1' for key 'PRIMARY'
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.827] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8425 [2021-09-05 08:27:35.827] ERROR: Writer execution failed.
+WRITER_1_*_1> CMN_1761 [2021-09-05 08:27:35.827] Timestamp Event: [Sun Sep 05 08:27:35 2021]
+WRITER_1_*_1> WRT_8114 [2021-09-05 08:27:35.827] 
+Row # [100] in bad file
+
+WRITER_1_*_1> CMN_1053 [2021-09-05 08:27:35.827] : Rowdata: ( RowType=0(insert) Src Rowid=100 Targ Rowid=100
+  Product_ID (Product_ID:Int:): "1"
+  Product_Name (Product_Name:UniChar.300:): "Mercedes-Benz"
+  Product_Price (Product_Price:Int:): "31375614"
+)
+
+WRITER_1_*_1> WRT_8168 [2021-09-05 08:27:35.827] End loading table [Max_Car_Prices] at: Sun Sep 05 08:27:35 2021
+WRITER_1_*_1> WRT_8141 [2021-09-05 08:27:35.977] 
+Commit on end-of-data  Sun Sep 05 08:27:35 2021
+===================================================
+
+WRT_8036 Target: Max_Car_Prices (Instance Name: [Max_Car_Prices])
+WRT_8038 Inserted rows - Requested: 100        Applied: 0          Rejected: 100        Affected: 0         
+
+WRITER_1_*_1> WRT_8035 [2021-09-05 08:27:35.977] Load complete time: Sun Sep 05 08:27:35 2021
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: Max_Car_Prices (Instance Name: [Max_Car_Prices])
+WRT_8038 Inserted rows - Requested: 100        Applied: 0          Rejected: 100        Affected: 0         
+
+
+WRITER_1_*_1> WRT_8043 [2021-09-05 08:27:35.977] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2021-09-05 08:27:36.132] Writer run completed.
+MANAGER> PETL_24031 [2021-09-05 08:27:36.132] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Max_Car_Prices] has completed.
+	Total Run Time = [15.358101] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MAPPING> CMN_1791 [2021-09-05 08:27:36.132] The index cache size that would hold [100] aggregate groups of input rows for [Aggregator], in memory, is [5688] bytes
+MAPPING> CMN_1790 [2021-09-05 08:27:36.133] The data cache size that would hold [100] aggregate groups of input rows for [Aggregator], in memory, is [64000] bytes
+MANAGER> PETL_24005 [2021-09-05 08:27:36.133] Starting post-session tasks. : (Sun Sep 05 08:27:36 2021)
+MANAGER> PETL_24029 [2021-09-05 08:27:36.134] Post-session task completed successfully. : (Sun Sep 05 08:27:36 2021)
+MAPPING> TM_6018 [2021-09-05 08:27:36.134] The session completed with [0] row transformation errors. 
+MANAGER> TE_7216 [2021-09-05 08:27:36.134] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/cache/PMAGG1375676412_4_0.idx] for transformation [Aggregator].
+MANAGER> TE_7216 [2021-09-05 08:27:36.134] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASJH0E00000000005T/01ASJH/cache/PMAGG1375676412_4_0.dat] for transformation [Aggregator].
+MANAGER> PETL_24002 [2021-09-05 08:27:36.612] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2021-09-05 08:27:36.612] Session run completed successfully.
+DIRECTOR> TM_6022 [2021-09-05 08:27:36.612] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2021-09-05 08:27:36.612] Source Load Summary.
+DIRECTOR> CMN_1740 [2021-09-05 08:27:36.612] Table: [Source] (Instance Name: [Source])
+	 Output Rows [100], Affected Rows [100], Applied Rows [100], Rejected Rows [0]
+DIRECTOR> TM_6253 [2021-09-05 08:27:36.612] Target Load Summary.
+DIRECTOR> CMN_1740 [2021-09-05 08:27:36.612] Table: [Max_Car_Prices] (Instance Name: [Max_Car_Prices])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [100]
+DIRECTOR> TM_6023 [2021-09-05 08:27:36.612] 
+===================================================
+
+DIRECTOR> TM_6020 [2021-09-05 08:27:36.612] Session [s_mtt_01ASJH0Z000000000006] completed at [Sun Sep 05 08:27:36 2021].
